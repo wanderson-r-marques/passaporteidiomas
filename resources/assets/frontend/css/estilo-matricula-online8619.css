@@ -1,0 +1,489 @@
+﻿.close-modal-button {
+    position: absolute;
+    right: 0px;
+    top: -25px;
+    font-size: 1.1em;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+.modal-matricula-online {
+    z-index: 99999999;
+    width: 745px;
+    height: 503px;
+    margin: auto;
+    position: relative;
+}
+
+    .modal-matricula-online.banner {
+        width: 820px;
+        height: 503px;
+        margin: auto;
+        position: relative;
+        top: calc(50% - 250px);
+    }
+
+        .modal-matricula-online.banner .banner {
+            right: 0 !important
+        }
+
+.fancybox-opened {
+    background-color: transparent !important;
+    width: 100% !important;
+    /*height: auto !important;*/
+    
+}
+
+.modal-matricula-online-bottom {
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+}
+
+.modal-matricula-online-left {
+    width: 373px;
+    height: calc(501px - 160px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal-matricula-online-form {
+    width: calc(746px - 373px);
+    height: calc(501px - 160px);
+    position: absolute;
+    right: 0px;
+}
+
+    .modal-matricula-online-form.banner {
+        top: 50%;
+        margin-top: -170px;
+    }
+
+    .modal-matricula-online-form > form {
+        margin-top: 24px;
+        width: 91.5%;
+        float: left;
+        padding: 10px;
+    }
+
+    .modal-matricula-online-form form > div > input {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        background-color: #ffffff59;
+        color: black;
+        border: none;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+    }
+
+        .modal-matricula-online-form form > div > input[type=submit],
+        .modal-matricula-online-form form > div > input[type=button] {
+            width: 106%;
+        }
+
+        .modal-matricula-online-form form > div > input::placeholder {
+            color: black;
+        }
+
+.campo-matricula-online-2, .campo-matricula-online-3, .campo-matricula-online-outros-3,
+.close-modal, .p-matricula-online, .p-mensagem-sucesso, .p-mensagem-erro, .divMsg, .divForm,
+.p-acao, .p-slider {
+}
+
+.full-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.right-container .combo-input,
+.left-container .combo-input {
+    display: none;
+    background: #ffffff59;
+    color: black;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.right-container .combo-arrow,
+.left-container .combo-arrow {
+    display: none !important;
+}
+
+.right-container .combo-dropdown,
+.left-container .combo-dropdown {
+    display: none !important;
+}
+
+.right-container .combo-select select,
+.left-container .combo-select select {
+    left: 0;
+    top: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: #ffffff59;
+    color: black;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    opacity: 100;
+}
+
+.right-container .combo-input::placeholder,
+.left-container .combo-input::placeholder {
+    color: black !important;
+}
+
+.right-container .combo-input > select > ul > li,
+.left-container .combo-input > select > ul > li {
+    background: white;
+}
+
+.full-container > .combo-select {
+    margin-bottom: 5px !important;
+    height: 40px;
+    line-height: 40px;
+    width: 103% !important;
+}
+
+.left-container .combo-select,
+.right-container .combo-select {
+    margin-bottom: 5px !important;
+    height: 40px !important;
+    line-height: 40px;
+    width: 100%;
+    font: 400 13.3333px Arial !important;
+}
+
+.left-container .combo-input,
+.right-container .combo-input {
+    font: 400 13.3333px Arial !important;
+}
+
+.left-container {
+    width: 47%;
+    float: left;
+}
+
+.right-container {
+    width: 47%;
+    float: right;
+    margin-left: 3%;
+}
+
+.submit-later-container {
+    margin-top: 20px;
+    border: 2.5px solid white;
+    width: 48%;
+    text-align: center;
+    text-decoration: none;
+    margin-right: -10px;
+}
+
+    .submit-later-container > a {
+        background-color: transparent;
+        line-height: 33px;
+        font-size: 14px;
+        margin-top: 20px;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        padding: 0;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+.submit-container > input {
+    color: white !important;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    background-color: #089d32 !important;
+    width: 106%;
+    text-transform: uppercase;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: #000000;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0;
+    font: 400 13.3333px Arial;
+}
+
+    select:not(:-internal-list-box) {
+        overflow: visible !important;
+    }
+
+.state-error > select,
+.state-error > input[type=text],
+.state-error > input::placeholder {
+    color: #FF0000 !important;
+    font-weight: bold;
+}
+
+em.invalid {
+    display: none !important;
+}
+
+.no-spin::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.modal-mensagem {
+    width: 380px;
+    height: 380px;
+    position: fixed;
+    top: calc(50% - 190px);
+    left: calc(50% - 190px);
+    z-index: 99999999;
+    background-color: #e9e9e9;
+}
+
+#modalMensagemErro {
+    height: 90px !important;
+    top: calc(50% - 45px);
+}
+
+.div-mensagem {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: calc(50% - 140px);
+    /*left: calc(50% - 185px);*/
+    z-index: 99999999;
+    background-color: #e9e9e9;
+}
+
+.divMensagem {
+    width: 90%;
+    text-align: left;
+    font: 400 13px Arial;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+    .divMensagem a {
+        width: auto;
+    }
+
+.modal-matricula-online-form.banner.divMsg,
+#divMensagemSucesso {
+    /*width: 370px !important;*/
+    /*height: 400px !important;*/
+    /*top: 56px !important;*/
+    padding-right: 10px;
+}
+
+
+@media screen and (min-width: 701px) {
+    .modal-matricula-online.banner {
+        background: url("images/transp.png") no-repeat;
+        /*background-color: #FF0000;
+		opacity: 0.2;*/
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .modal-matricula-online-form form > div > input[type=date] {
+        width: 96% !important;
+        background-color: white !important;
+        margin-bottom: 0 !important;
+        border-radius: 2px;
+    }
+
+    .div-mensagem {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+    .modal-matricula-online-form form > div > input[type=date] {
+        width: 96% !important;
+        background-color: white !important;
+        margin-bottom: 5px !important;
+        border-radius: 2px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .fancybox-opened {
+        left: 0 !important;
+    }
+
+
+
+    .modal-matricula-online {
+        background: none;
+        /*margin-left: calc(50% - 178px) !important;*/
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        padding-top: 26px;
+        min-width: 332px;
+    }
+
+        .modal-matricula-online.banner {
+            width: auto !important;
+            top: 50%;
+            height: 40% !important;
+        }
+
+    .modal-matricula-online-link {
+        display: none !important;
+    }
+
+    .modal-matricula-online-form {
+        left: 0 !important;
+        margin-top: 0 !important;
+        /*position: unset !important;*/
+        top: 25px !important;
+        width: auto !important;
+    }
+
+        .modal-matricula-online-form.banner {
+            top: 0 !important;
+        }
+
+            .modal-matricula-online-form.banner .divMensagem {
+                margin-top: 0px !important;
+            }
+
+            .modal-matricula-online-form.banner.divMsg {
+                height: 583px;
+            }
+
+        .modal-matricula-online-form > form {
+            height: auto !important;
+            width: auto !important;
+            margin-top: 0px !important;
+            padding-top: 0px !important;
+            padding-bottom: 100px !important;
+            padding-top: 230px !important;
+            background-size: cover !important;
+        }
+
+        .modal-matricula-online-form form > div > input[type=text] {
+            width: 100% !important;
+            background-color: white !important;
+        }
+
+        .modal-matricula-online-form form > div > .combo-select {
+            border-radius: 2px !important;
+            background-color: white !important;
+            margin-bottom: 1px !important;
+        }
+
+        .modal-matricula-online-form.banner > form {
+            background: none !important;
+            padding-top: 0px !important;
+            padding-bottom: 150px !important;
+        }
+
+    .close-modal-button {
+        right: 0;
+        top: 0;
+    }
+
+    .left-container {
+        width: 100% !important;
+        display: inline-block !important;
+        float: none !important;
+    }
+
+    .right-container {
+        width: 100% !important;
+        display: inline-block !important;
+        float: none !important;
+        margin-left: 0% !important;
+    }
+
+        .left-container .combo-select,
+        .right-container .combo-select {
+            width: 100% !important;
+        }
+
+    .submit-later-container {
+        width: 98% !important;
+    }
+
+    .submit-container {
+        width: 104% !important;
+    }
+
+        .submit-container > input {
+            width: 96% !important;
+            background-color: #089d32 !important;
+        }
+
+    .combo-input {
+        /*Alterado para exibir o placeholder tambem no ambiente mobile*/
+        /*background: white !important;*/
+    }
+
+    .modal-matricula-online-bottom,
+    .modal-matricula-online-left {
+        display: none;
+    }
+
+    .modal-mensagem {
+        width: 96% !important;
+        left: 2%;
+        height: 400px;
+        background-color: transparent;
+    }
+
+    .div-mensagem {
+        /*left: 5% !important;*/
+        position: relative;
+        margin-top: 25px;
+       
+    }
+
+
+    .divMensagem {
+        width: 100% !important;
+        height:440px;
+        background-color: #e9e9e9;
+        left: 2%;
+        margin-top: 25px !important;
+    }
+
+        .divMensagem a {
+            width: auto;
+        }
+
+    .modal-matricula-online-form.banner.divMsg,
+    #divMensagemSucesso {
+        /*width: 96% !important;
+        left: 0 !important;*/
+        padding-right: 0 !important;
+        margin-bottom: 100px;
+        margin: 0 auto;
+        top: 0 !important;
+        margin-bottom: 150px;
+    }
+}

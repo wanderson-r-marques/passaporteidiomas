@@ -1,0 +1,269 @@
+﻿@media (max-width:500px) {
+    .saiba-mais,
+    .saiba-mais ul {
+        width: 100% !important;
+    }
+
+    .busca {
+        margin-top: 0px !important;
+    }
+}
+
+
+/* START - BOTAO MATRICULA ONLINE MAIO 2016 */
+
+.portais ul li.link-matricula-online.btn-novo {
+    width: 240px;
+    height: 100px;
+    position: absolute;
+    top: inherit;
+    left: 0;
+    bottom: 20px !important;
+    background: url(images/btn-matricula-online-2016.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    text-align: left;
+}
+
+    .portais ul li.link-matricula-online.btn-novo a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 99;
+    }
+
+    .portais ul li.link-matricula-online.btn-novo .dent-cna {
+        width: 85px;
+        height: 85px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 100% auto;
+        -webkit-animation: dent 0.6s linear infinite alternate;
+        z-index: 90;
+    }
+
+@media (max-width:768px) {
+    .portais {
+        background-color: transparent;
+    }        
+
+        .portais ul li.link-matricula-online.btn-novo .dent-cna {
+            width: 55px;
+            height: 55px;
+            left: 4px;
+        }
+
+        .portais ul li.link-matricula-online.btn-novo {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 60px;
+            bottom: 0px !important;
+            background: url(images/btn-matricula-online-2016-mobile.png) no-repeat;
+            background-position: center center;
+            background-size: auto 60px;
+        }
+}
+
+@keyframes dent {
+    0% {
+        background: url(images/dent-frame-1.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    15% {
+        background: url(images/dent-frame-2.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    30% {
+        background: url(images/dent-frame-3.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    50% {
+        background: url(images/dent-frame-4.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    70% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    100% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+@-moz-keyframes dent {
+    0% {
+        background: url(images/dent-frame-1.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    15% {
+        background: url(images/dent-frame-2.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    30% {
+        background: url(images/dent-frame-3.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    50% {
+        background: url(images/dent-frame-4.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    70% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    100% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+@-webkit-keyframes dent {
+    0% {
+        background: url(images/dent-frame-1.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    15% {
+        background: url(images/dent-frame-2.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    30% {
+        background: url(images/dent-frame-3.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    50% {
+        background: url(images/dent-frame-4.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    70% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    100% {
+        background: url(images/dent-frame-5.png) no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+/* END - BOTAO MATRICULA ONLINE MAIO 2016 */
+.seja-franqueado .img-simbolo {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.seja-franqueado .box-cinza {
+    padding: 20px;
+    background: #eee;
+    margin-bottom: 20px;
+}
+
+.seja-franqueado .box-red {
+    padding: 20px;
+    background: #c92720;
+}
+
+    .seja-franqueado .box-red h2,
+    .seja-franqueado .box-red p {
+        color: #ffffff;
+    }
+
+        .seja-franqueado .box-red p + p {
+            padding: 0 200px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .seja-franqueado .box-red p img {
+            display: inline-block;
+            vertical-align: top;
+            float: right;
+            margin: -180px -200px 0 0;
+        }
+
+    .seja-franqueado .box-red img.depoimento {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        margin-right: 4%;
+    }
+
+    .seja-franqueado .box-red p.depoimento {
+        display: inline-block;
+        width: 65%;
+        vertical-align: top;
+        margin-bottom: 50px;
+    }
+
+.seja-franqueado p.info-adicional {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.principal ul.menu li.only-mobile {
+    display: none;
+    width: 100%;
+    float: left;
+}
+
+    .principal ul.menu li.only-mobile .s-corporativo img {
+        margin-top: -50px;
+    }
+
+@media only screen and (max-width:768px) {
+    .seja-franqueado .box-red p + p {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .seja-franqueado .box-red p img {
+        float: none;
+        margin: 0;
+    }
+
+    .seja-franqueado .box-red img.depoimento {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .seja-franqueado .box-red p.depoimento {
+        width: 100%;
+    }      
+    
+    .principal ul.menu li.only-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .principal ul.menu li.only-mobile {
+        display: block;
+        height: 48px;
+        clear: both;
+        width: 100%;
+        float: none;
+    }
+}
+
+@media(min-width:767px) {
+    .mgbtm50px{
+        margin-bottom:-50px !important;
+    }
+}

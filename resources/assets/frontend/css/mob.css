@@ -1,0 +1,29 @@
+﻿.mob-win8 .link-matricula-online {
+    display: none !important;
+}
+.mob-win8 .compartilhamento > ul > li:first-child {
+    display: none !important;
+}
+
+.mob-win8 .share-div {
+    left: 40px;
+}
+.mob-win8 .conteudo-div {
+    max-height: 100% !important;
+}
+
+.mob-win8 .compartilhamento {
+    padding-bottom: 130px !important;
+}
+
+.mob-win8 .volta-assessoria {
+    display: none !important;
+}
+
+.mob-iosandroid .compartilhamento > ul > li:first-child {
+    display: none !important;
+}
+
+.mob-win8 .addthis_sharing_toolbox {
+	display: block !important;
+}

@@ -1,0 +1,37 @@
+body {
+	background:none !important;
+}
+
+/*Css Print*/
+.conteudo-div,.mCustomScrollBox{
+	width: 100% !important;
+	height: 100% !important;
+	max-height: 100% !important;
+}
+.sub-menu-idiomas{
+	display: none;
+}
+.pg_inicial {
+	background: none;
+}
+.menu-responsivo{
+	display: none;
+}
+.compartilhamento{display: none !important;}
+.paginacao-assessoria{display:none;}
+
+.video-container{
+	display: none;
+}
+.mapa-interna-busca{
+	display: none;
+}
+.mapa-busca{
+	display: none;	
+}
+.volta-topo{
+	display: none;
+}
+.envolve-sliders{
+	display: none;
+}

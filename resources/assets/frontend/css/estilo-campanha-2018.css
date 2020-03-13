@@ -1,0 +1,306 @@
+﻿@font-face {
+    font-family: 'mbvinatagebold';
+    src: url('../fonts/MBVinatage-Bold.eot');
+    src: url('../fonts/MBVinatage-Boldd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/MBVinatage-Bold.woff2') format('woff2'), url('../fonts/MBVinatage-Bold.woff') format('woff'), url('../fonts/MBVinatage-Bold.ttf') format('truetype'), url('../fonts/MBVinatage-Bold.svg#dinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.portais ul li.link-matricula-online.btn-novo {
+    width: 240px;
+    height: 100px;
+    position: absolute;
+    top: inherit;
+    left: 0;
+    /* ReSharper disable Html.PathError */
+    background: url(images/btn-matricula-online-2016.png) no-repeat;
+    /* ReSharper restore Html.PathError */
+    /* ReSharper disable CssBrowserCompatibility */
+    background-size: 100% auto;
+    background-position: center center;
+    /* ReSharper restore CssBrowserCompatibility */
+    text-align: left;
+}
+
+.campanha-2018-header {
+    margin: -10px 0 15px 115px;
+}
+
+    .campanha-2018-header h1 {
+        font-size: 35px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .campanha-2018-header h4 {
+        font-size: 12px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+.conteudo-2018 {
+    margin-left: 115px;
+    height: 100%;
+}
+
+    .conteudo-2018 .box-content {
+        width: 25.3%;
+        float: left;
+        margin-right: 8%;
+        height: 100%;
+    }
+
+    .conteudo-2018 .box-content {
+        width: 25.3%;
+        float: left;
+        margin-right: 8%;
+        height: 100%;
+    }
+
+    .conteudo-2018 .box-titulo {
+        font-size: 25px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #cc0b69;
+        text-transform: uppercase;
+    }
+
+    .conteudo-2018 .box-video {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        /* ReSharper disable CssBrowserCompatibility */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* ReSharper restore CssBrowserCompatibility */
+        background-position-x: center;
+    }
+
+    .conteudo-2018 .box-banner img {
+        width: 100%;
+    }
+
+@media only screen and (max-width: 1171px) {
+    .pg-idioma-ingles {
+        height: 100%;
+        min-height: calc(100% - 65px);
+        max-height: calc(100% - 65px);
+    }
+
+    .box-content .box-titulo {
+        font-size: 18px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #cc0b69;
+        text-transform: uppercase;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pg-idioma-ingles {
+        height: 100%;
+        min-height: calc(100% - 65px);
+        max-height: calc(100% - 65px);
+    }
+
+    .conteudo-2018 .box-titulo {
+        font-size: 25px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #cc0b69;
+        text-transform: uppercase;
+    }
+
+    .portais {        
+        padding-top: 5%;
+        /*height: 0;*/
+        display: block;
+    }
+
+        .portais ul li.link-matricula-online.btn-novo {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 60px;
+            bottom: 0 !important;
+            background: url(images/btn-matricula-online-2016-mobile.png) no-repeat;
+            /* ReSharper disable CssBrowserCompatibility */
+            background-position: center center;
+            background-size: auto 60px;
+            /* ReSharper restore CssBrowserCompatibility */
+        }
+
+    .menu-responsivo, .principal {
+        z-index: 999;
+    }
+
+    .campanha-2018-header {
+        font-size: 40px;
+        color: #cc0b69;
+        font-family: 'mbvinatagebold';
+        text-align: center;
+        margin: 0;
+        background-color: #fff;
+        padding: 11px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        text-transform: uppercase;
+    }
+
+        .campanha-2018-header h1,
+        .campanha-2018-header h4 {
+            margin: 0;
+        }
+
+        .campanha-2018-header h4 {
+            font-size: 10px;
+        }
+
+    .conteudo-2018 {
+        margin-left: 0;
+        overflow-y: scroll !important;
+        max-height: calc(100% - 160px) !important;
+    }
+
+        .conteudo-2018 .box-content {
+            width: 92%;
+            height: auto;
+            margin-right: 4%;
+            margin-left: 4%;
+        }
+
+        .conteudo-2018 .box-video {
+            padding: 50px 0;
+            text-align: center;
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            /* ReSharper disable CssBrowserCompatibility */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* ReSharper restore CssBrowserCompatibility */
+            background-position-x: center;
+        }
+
+
+    .fontsizetitulo {
+        font-size: 22px;
+    }
+
+    .widthplay {
+        width: 80px !important;
+        height: 80px !important;
+        margin-top: -30px !important;
+    }
+
+    .campanha-videos-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    /*.box_1_barra_3 {
+        display: block;
+    }
+
+    .box_2_barra_3 {
+        display: block;
+    }*/
+
+    .fontsizetitulo {
+        font-size: 30px;
+    }
+
+    .widthplay {
+        width: 110px !important;
+        height: 110px !important;
+        margin-top: -75px !important;
+    }
+
+    .campanha-videos-mobile {
+        display: none;
+    }
+}
+
+
+
+.campanha-videos-desktop {
+    display: inline-block;
+    width: 66%;
+    position: relative;
+    float: left;
+}
+
+.campanha-videos-desktop .box-content {
+    width: 100%;
+    padding-right: 8% !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
+}
+
+
+.campanha-videos-desktop .box-content div {
+    max-height: 200px !important;
+    background-size: cover !important;
+}
+
+.modal-imagem-campanha {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.modal-imagem-campanha .back-drop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modal-imagem-campanha img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+    .modal-imagem-campanha a {
+        position: absolute;
+        color: #cc0b69;
+        font-size: 60px;
+        top: -20px;
+        right: 10px;
+        font-family: cursive;
+        font-weight: bold;
+        z-index: 20;
+    }
