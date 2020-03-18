@@ -566,6 +566,10 @@
         <p>CNA</p>
     </div>
     <nav class="principal" id="principal">
+        <div class="logo">
+            <a href="index.html"><h2><img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}"/><b>PASSAPORTE IDIOMAS</b></h2>
+            </a>
+        </div>
         <ul id="menu-responsivo" class="menu">
             <li>
                 <!--ativo-bg-mobile-->
@@ -573,19 +577,19 @@
                     <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}"/>
                 </div>
 
-                <a class="mob-w menu-home" href="Home.html">Home</a>
+                <a class="mob-w" href="Home.html">INÍCIO</a>
             </li>
             <li>
                 <!--ativo-bg-mobile-->
                 <div class="icon cursos">
                     <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}"/>
                 </div>
-                <a class="mob-w menu-cursos" href="javascript:void(0);">cursos</a>
+                <a class="mob-w menu-cursos" href="javascript:void(0);">FORMAÇÕES</a>
 
                 <ul class="int-menu int-menu2  menu-mobile-ul">
 
-                    <div class="seta-menu" style="display: none"><img alt=""
-                                                                      src="{{url('assets/frontend/css/images/seta-menu.png')}}"/>
+                    <div class="seta-menu" style="display: none">
+                        <img alt="" src="{{url('assets/frontend/css/images/seta-menu.png')}}"/>
                     </div>
                     <li class="top top1">
 
@@ -650,14 +654,15 @@
                 <div class="icon escolas">
                     <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}"/>
                 </div>
-                <a class="mob-w menu-escolas" href="busca-escola.html">escolas</a>
+                <a class="mob-w menu-escolas" href="busca-escola.html">UNIDADES</a>
             </li>
             <li>
                 <!--ativo-bg-mobile-->
                 <div class="icon s-cna">
                     <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}"/>
                 </div>
-                <a class="mob-w menu-sobrecna" href="javascript:void(0);">sobre o cna</a>
+                <a class="mob-w menu-sobrecna" href="javascript:void(0);">QUEM SOMOS</a>
+
                 <ul class="int-menu menu-mobile-ul">
                     <div class="seta-menu"><img alt="" src="{{url('assets/frontend/css/images/seta-menu.png')}}"/></div>
                     <li class="top top-int">
@@ -685,12 +690,11 @@
                 <div class="icon s-fluente">
                     <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}"/>
                 </div>
-                <a class="mob-w menu-seja-fluente" href="javascript:;">Seja fluente</a>
+                <a class="mob-w menu-seja-fluente" href="javascript:;">CERTIFICAÇÃO <br> DE CAMBRIDGE</a>
                 <ul class="int-menu menu-mobile-ul">
                     <div class="seta-menu"><img alt="" src="{{url('assets/frontend/css/images/seta-menu.png')}}"/></div>
                     <li class="top top-int">
-                        <a href="seja-fluente/certificacao-de-cambridge.html" class="submenu-certificacao">certificação
-                            de<br/> cambridge</a>
+                        <a href="seja-fluente/certificacao-de-cambridge.html" class="submenu-certificacao">CAMBRIDGE</a>
                     </li>
                     <li class="top top-int">
                         <a href="seja-fluente/certificacao-siele.html" class="submenu-certificacao-dele">certificação
@@ -718,8 +722,8 @@
                 <!--
                     <a class="mob-w menu-seja-franqueado" href="/cna/MontaDynamicUrl/Index/31">seja UM <br />franqueado</a>
                 -->
-                <a class="mob-w menu-seja-franqueado" href="http://www.franquiacna.com.br/" target="_blank">seja UM
-                    <br/>franqueado</a>
+                <a class="mob-w menu-seja-franqueado" href="http://www.franquiacna.com.br/" target="_blank">VOCÊ NAS
+                    <br/>NUVENS</a>
             </li>
             <li class="only-mobile">
                 <div class="icon s-corporativo">
@@ -773,6 +777,15 @@
             <ul class="redes">
                 <li>
 
+                    <a class="instagram-fan-page" target="_blank" href="https://www.instagram.com/cnaoficial">
+
+                        <div class="icon ins">
+                            <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+
                     <a class="facebook-fan-page" target="_blank" href="https://www.facebook.com/CNAoficial?fref=ts">
 
                         <div class="icon fb">
@@ -789,18 +802,10 @@
                         </div>
                     </a>
                 </li>
+
                 <li>
 
-                    <a class="youtube-fan-page" target="_blank" href="https://www.youtube.com/user/cnaoficial">
-
-                        <div class="icon you">
-                            <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}"/>
-                        </div>
-                    </a>
-                </li>
-                <li>
-
-                    <a class="linkedin-fan-page" target="_blank"
+                    <a class="whatsapp-fan-page" target="_blank"
                        href="https://www.linkedin.com/company/472767?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A472767%2Cidx%3A2-1-5%2CtarId%3A1441229978071%2Ctas%3Acna%20idiomas">
 
                         <div class="icon in">
@@ -809,31 +814,11 @@
                     </a>
                 </li>
 
-                <li>
 
-                    <a class="instagram-fan-page" target="_blank" href="https://www.instagram.com/cnaoficial">
-
-                        <div class="icon ins">
-                            <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}"/>
-                        </div>
-                    </a>
-                </li>
             </ul>
         </div>
-        <div class="busca">
 
 
-            <form class="form-busca" action="https://www.cna.com.br/cna/Busca/Index/routeFilter" method="post">
-
-                <input type="text" name="BuscaPor" placeholder="Busca">
-                <input class="buscar" type="submit" value="">
-            </form>
-
-        </div>
-        <div class="logo">
-            <a href="index.html"><h2><img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}"/><b>CNA</b></h2>
-            </a>
-        </div>
     </nav>
 
 
@@ -890,28 +875,19 @@
 
 
         <div class="slider single-item">
-
-
+            {{--Início do slider--}}
             <div class="sld-home-1 sld-img-1 sld-home"
-                 style="background: url(http://adm.cna.com.br/arquivos/imagem/Banners/banner_desktop_experimenta_fev2020.jpg) no-repeat  center center">
+                 style="background: url(assets/frontend/css/images/sliders/01.jpg) no-repeat  center center">
 
                 <a href="https://experimentacna.com.br/"></a>
             </div>
-            <div class="sld-home-1 sld-img-2 sld-home"
-                 style="background: url(http://adm.cna.com.br/arquivos/imagem/Banners/banner_desktop_institucional_camp2020.jpg) no-repeat  center center">
-
-                <a href="https://experimentacna.com.br/"></a>
-            </div>
-            <div class="sld-home-1 sld-img-5 sld-home"
-                 style="background: url(http://adm.cna.com.br/arquivos/imagem/Banners/banner_desktop_camiseta_2.jpg) no-repeat  center center">
-                <a href="https://www.lojacna.com.br/"></a>
-            </div>
+            {{--Final do Slider--}}
         </div>
         <a class="p-slider" href="#" style="display: none"></a>
 
         <style type="text/css">
             .menu-home {
-                color: #ca2112 !important;
+                color: #fff !important;
             }
 
             @media only screen and (max-width: 980px) {
