@@ -1,0 +1,58 @@
+.menu-home {
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 980px) {
+    .sld-img-1 {
+        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_experimenta_fev2020.jpg') no-repeat center center !important;
+    }
+
+    .sld-img-2 {
+        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_institucional_camp2020.jpg') no-repeat center center !important;
+    }
+
+    .sld-img-5 {
+        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_camiseta_2.jpg') no-repeat center center !important;
+    }
+}
+
+
+body,
+html {
+    -ms-overflow-style: none !important;
+}
+
+@-ms-viewport {
+    /* ReSharper disable CssBrowserCompatibility */
+    width: device-width;
+    /* ReSharper restore CssBrowserCompatibility */
+}
+
+@media only screen and (max-width: 767px) {
+    .lista-campanhas li {
+        width: 100%;
+        float: left;
+        height: calc(33.3vh - 30px) !important;
+        /* ReSharper disable CssBrowserCompatibility */
+        background-size: 100% !important;
+        /* ReSharper restore CssBrowserCompatibility */
+    }
+
+    .lista-campanhas {
+        height: calc(100vh - 92px) !important;
+    }
+
+    /*	body.iphone .lista-campanhas li {
+            / *height: auto  !important; / * para suporte nativo era calc(33.3vh - 30px) * /
+        }*/
+
+
+}
+
+.displayblock {
+    display: block !important;
+}
+
+.displaynone {
+    display: none !important;
+}
