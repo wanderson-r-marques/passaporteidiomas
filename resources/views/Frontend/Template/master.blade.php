@@ -271,5 +271,18 @@
 
 @yield('content')
 
+    <div id="buttonfooter-cnaola"
+         style="position: fixed; display: block; left: 70%; top: 8%; z-index: 8; margin-right: 200px; width: 200px;"><img
+            src="https://www.cna.com.br/external/contatos/img/matricule_se.png" alt="Matricule-se Já">
+        <a title="E-mail"
+           class="btn-cnaola-footer"
+           id="btn-cnaola-footer-email"
+           style="                     height: 32px;                     width: 32px;                     position: absolute;                     left: 35px;                     top: 42px;"></a>
+        <a title="(11) 4020-0241" class="btn-cnaola-footer" id="btn-cnaola-footer-telefone"
+           style="                     height: 32px;                     width: 32px;                     position: absolute;                     left: 84px;                     top: 42px;"></a>
+        <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=551130533800" target="_blank"
+           class="btn-cnaola-footer" id="btn-whatsapp"
+           style="                     height: 32px;                     width: 32px;                     position: absolute;                     left: 134px;                     top: 42px;"></a>
+    </div>
 </body>
 </html>

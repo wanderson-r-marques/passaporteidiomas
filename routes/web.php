@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::name('web.')->namespace('Frontend')->group(function(){
     Route::get('/', 'WebController@home')->name('home');
+    Route::get('quem-somos','WebController@theCourse')->name('theCourse');
 });
 
 
