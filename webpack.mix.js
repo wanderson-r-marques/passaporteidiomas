@@ -14,7 +14,8 @@ const mix = require('laravel-mix');
 mix.styles([
     'resources/assets/frontend/bundles/css6a06.css',
     'resources/assets/frontend/css/estilo-campanha-2018.css',
-    'resources/assets/frontend/css/passaporte.css'
+    'resources/assets/frontend/css/passaporte.css',
+    'resources/assets/frontend/css/estilo8619.css'
 ],'public/assets/frontend/css/web.css');
 
 mix.js([
