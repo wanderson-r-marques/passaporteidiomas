@@ -112,7 +112,7 @@
                     <div class="icon escolas">
                         <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}" />
                     </div>
-                    <a class="mob-w menu-escolas" href="busca-escola.html">UNIDADES</a>
+                    <a class="mob-w menu-escolas" href="{{ route('web.units') }}">UNIDADES</a>
                 </li>
                 <li>
                     <!--ativo-bg-mobile-->

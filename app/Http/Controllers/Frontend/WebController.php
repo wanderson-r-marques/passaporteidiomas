@@ -21,6 +21,11 @@ class WebController extends Controller
         return view('frontend.formations');
     }
 
+    public function units()
+    {
+        return view('frontend.units');
+    }
+
     // Formações
     public function kids()
     {
@@ -51,4 +56,6 @@ class WebController extends Controller
     {
         return view('frontend.formations.espanhol');
     }
+
+    
 }

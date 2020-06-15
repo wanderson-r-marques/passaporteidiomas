@@ -17,6 +17,7 @@ Route::name('web.')->namespace('Frontend')->group(function(){
     Route::get('/', 'WebController@home')->name('home');
     Route::get('/quem-somos','WebController@theCourse')->name('who.we.are'); 
     Route::get('/formacoes','WebController@formations')->name('formations');
+    Route::get('/unidades','WebController@units')->name('units');
     Route::name('formations.')->group(function(){        
         Route::get('/formacoes/kindergarten','WebController@kindergarten')->name('kindergarten');
         Route::get('/formacoes/kids','WebController@kids')->name('kids');
