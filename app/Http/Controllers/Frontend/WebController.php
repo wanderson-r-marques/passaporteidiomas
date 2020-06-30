@@ -3,6 +3,10 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\newContatc;
+use App\Mail\newContact;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WebController extends Controller
 {
@@ -26,6 +30,23 @@ class WebController extends Controller
         return view('frontend.units');
     }
 
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
+
+    public function sendContact(Request $request)
+    {
+
+        // return new newContact($request->all());
+        // Mail::send(new newContact($request->all()));
+
+        newContatc::dispatch($request->all());
+
+        flash('Mensagem enviada com sucesso!')->success();
+        return redirect()->route('web.contact');
+    }
+
     // Formações
     public function kids()
     {
@@ -47,6 +68,11 @@ class WebController extends Controller
         return view('frontend.formations.teens');
     }
 
+    public function teensYoung()
+    {
+        return view('frontend.formations.teens-young');
+    }
+
     public function regular()
     {
         return view('frontend.formations.regular');
@@ -56,6 +82,4 @@ class WebController extends Controller
     {
         return view('frontend.formations.espanhol');
     }
-
-    
 }

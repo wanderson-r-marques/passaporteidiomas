@@ -93,41 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var PageEnum = {
-  Home: 7,
-  Busca: 8,
-  Escola: 9,
-  BuscaEscola: 11,
-  CNAOla: 12,
-  ConveniosParceirias: 13,
-  AssessoriaImprensa: 17,
-  AssessoriaImprensaDetalhe: 18,
-  FaleConosco: 19,
-  FaleConoscoCentral: 20,
-  FaleConoscoAssessoria: 21,
-  TrabalheConosco: 22,
-  CursoEspanhol: 23,
-  CursoEspanholAdolescentes: 24,
-  CursoEspanholAdultos: 25,
-  CursoIngles: 26,
-  CursoInglesCriancas: 27,
-  CursoInglesAdolescentes: 28,
-  CursoInglesAdultos: 29,
-  CursoInglesCNAFast: 30,
-  CursoInglesCNAGo: 49,
-  Franqueado: 31,
-  SejaFluente: 32,
-  CNA360: 33,
-  HappyLessons: 34,
-  Intercambio: 35,
-  Sobre: 36,
-  SpeakingExchange: 37,
-  Noticias: 38,
-  NoticiasDetalhe: 39,
-  ResponsabilidadeSocial: 40,
-  Campanha: 41,
-  ConveniosParceiriasFormulario: 42
-};
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module '@babel/compat-data/corejs3-shipped-proposals'\nRequire stack:\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\polyfills\\corejs3\\usage-plugin.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\FileCollection.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\tasks\\ConcatenateFilesTask.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\components\\Combine.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\components\\ComponentFactory.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\setup\\webpack.config.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack-cli\\bin\\utils\\convert-argv.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack-cli\\bin\\cli.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack\\bin\\webpack.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:842:27)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at Object.<anonymous> (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\polyfills\\corejs3\\usage-plugin.js:10:55)\n    at Module._compile (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:192:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at Object.<anonymous> (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\index.js:29:44)\n    at Module._compile (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:192:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at requireModule (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:165:12)\n    at loadPreset (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:83:17)\n    at createDescriptor (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:154:9)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:50\n    at Array.map (<anonymous>)\n    at createDescriptors (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:29)\n    at createPresetDescriptors (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:101:10)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:58:104\n    at cachedFunction (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\caching.js:62:27)\n    at cachedFunction.next (<anonymous>)\n    at evaluateSync (C:\\laragon\\www\\passaporteidiomas\\node_modules\\gensync\\index.js:244:28)\n    at sync (C:\\laragon\\www\\passaporteidiomas\\node_modules\\gensync\\index.js:84:14)\n    at presets (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:29:84)\n    at mergeChainOpts (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:320:26)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:283:7\n    at Generator.next (<anonymous>)\n    at buildRootChain (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:68:36)\n    at buildRootChain.next (<anonymous>)");
 
 /***/ }),
 
@@ -138,66 +104,7 @@ var PageEnum = {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).ready(function () {
-  var autoplaySpeed = 7000; // ReSharper disable AssignToImplicitGlobalInFunctionScope
-
-  slider = $('.single-item').slick({
-    // ReSharper restore AssignToImplicitGlobalInFunctionScope
-    dots: true,
-    touchMove: true,
-    autoplay: true,
-    infinite: true,
-    pauseOnHover: false,
-    autoplaySpeed: autoplaySpeed
-  });
-  $(".fancybox").fancybox({
-    width: "100%",
-    heigth: "100%",
-    padding: 0,
-    helpers: {
-      media: true
-    },
-    youtube: {
-      autoplay: 1 // enable autoplay
-
-    },
-    beforeLoad: function beforeLoad() {
-      slider.slick('unslick');
-    },
-    beforeClose: function beforeClose() {
-      // ReSharper disable AssignToImplicitGlobalInFunctionScope
-      slider = $('.single-item').slick({
-        // ReSharper restore AssignToImplicitGlobalInFunctionScope
-        dots: true,
-        touchMove: true,
-        autoplay: true,
-        infinite: true,
-        pauseOnHover: false,
-        autoplaySpeed: autoplaySpeed
-      });
-    }
-  });
-  var isiPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
-
-  if (isiPhone) {//só faz pra iphone
-  }
-
-  if (navigator.userAgent.match('CriOS')) {
-    if ($('body').hasClass('iphone')) {
-      $('.lista-campanhas li').css({
-        height: 'calc(33.3vh - 30px)'
-      });
-    }
-  } else {
-    var sizeView = $('.single-item').height();
-    var bannerList = $('#home .single-item:first .lista-campanhas > li');
-    bannerList.each(function () {
-      $(this).css('min-height', sizeView / 3).addClass('hey'); //console.log('fiz', sizeView / 3);
-    });
-  }
-
-  $(".slick-prev.slick-arrow").attr("style", "display: block; z-index: 9999;");
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module '@babel/compat-data/corejs3-shipped-proposals'\nRequire stack:\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\polyfills\\corejs3\\usage-plugin.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\index.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\FileCollection.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\tasks\\ConcatenateFilesTask.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\components\\Combine.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\src\\components\\ComponentFactory.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\laravel-mix\\setup\\webpack.config.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack-cli\\bin\\utils\\convert-argv.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack-cli\\bin\\cli.js\n- C:\\laragon\\www\\passaporteidiomas\\node_modules\\webpack\\bin\\webpack.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:842:27)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at Object.<anonymous> (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\polyfills\\corejs3\\usage-plugin.js:10:55)\n    at Module._compile (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:192:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at Object.<anonymous> (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\preset-env\\lib\\index.js:29:44)\n    at Module._compile (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:192:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (C:\\laragon\\www\\passaporteidiomas\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at requireModule (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:165:12)\n    at loadPreset (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:83:17)\n    at createDescriptor (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:154:9)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:50\n    at Array.map (<anonymous>)\n    at createDescriptors (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:29)\n    at createPresetDescriptors (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:101:10)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:58:104\n    at cachedFunction (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\caching.js:62:27)\n    at cachedFunction.next (<anonymous>)\n    at evaluateSync (C:\\laragon\\www\\passaporteidiomas\\node_modules\\gensync\\index.js:244:28)\n    at sync (C:\\laragon\\www\\passaporteidiomas\\node_modules\\gensync\\index.js:84:14)\n    at presets (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:29:84)\n    at mergeChainOpts (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:320:26)\n    at C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:283:7\n    at Generator.next (<anonymous>)\n    at buildRootChain (C:\\laragon\\www\\passaporteidiomas\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:68:36)\n    at buildRootChain.next (<anonymous>)");
 
 /***/ }),
 

@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,11 +19,14 @@ Route::name('web.')->namespace('Frontend')->group(function(){
     Route::get('/quem-somos','WebController@theCourse')->name('who.we.are'); 
     Route::get('/formacoes','WebController@formations')->name('formations');
     Route::get('/unidades','WebController@units')->name('units');
+    Route::get('/contato','WebController@contact')->name('contact');
+    Route::post('/contato','WebController@sendContact')->name('send.contact');
     Route::name('formations.')->group(function(){        
         Route::get('/formacoes/kindergarten','WebController@kindergarten')->name('kindergarten');
         Route::get('/formacoes/kids','WebController@kids')->name('kids');
         Route::get('/formacoes/pre-teens','WebController@preTeens')->name('pre.teens');
         Route::get('/formacoes/teens','WebController@teens')->name('teens');
+        Route::get('/formacoes/teens-young','WebController@teensYoung')->name('teens.young');
         Route::get('/formacoes/regular','WebController@regular')->name('regular');
         Route::get('/formacoes/espanhol','WebController@espanhol')->name('espanhol');
     });      
