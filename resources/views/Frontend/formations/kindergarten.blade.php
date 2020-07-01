@@ -10,7 +10,7 @@
                     <a href='{{ route("web.home") }}' class="sub-menu-ativo conheca-cna">Principal</a>
                 </li>
                 <li>
-                    <a href='{{ route("web.formations") }}' class="sub-menu-ativo noticias-cna">Formações</a>
+                    <a class="sub-menu-ativo noticias-cna">Formações</a>
                 </li>
                 <li>
                     <a href='{{ route("web.formations.kindergarten") }}' class="sub-menu-ativo noticias-cna">Kindergarten</a>
