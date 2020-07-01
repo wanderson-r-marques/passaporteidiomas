@@ -11,22 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.styles([
-    'resources/assets/frontend/bundles/css6a06.css',
-    'resources/assets/frontend/css/estilo-campanha-2018.css',
-    'resources/assets/frontend/css/passaporte.css',
-    'resources/assets/frontend/css/estilo8619.css'
-],'public/assets/frontend/css/web.css');
-
-mix.js([
-    'resources/assets/frontend/js/jquery-1.11.0.min8619.js',
-    'resources/assets/frontend/js/jquery.inputmask.js',    
-    'resources/assets/frontend/js/passaporte.js',
-    'resources/assets/frontend/js/EnumJS.js'
-],'public/assets/frontend/js/web.js');
-
-mix.copy(['resources/assets/frontend/css/images'],'public/assets/frontend/css/images');
-mix.copy(['resources/assets/frontend/fonts'],'public/assets/frontend/fonts');
-mix.copy(['resources/assets/frontend/bundles'],'public/assets/frontend/bundles');
-mix.copy(['resources/assets/frontend/external'],'public/assets/frontend/external');
-
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css');

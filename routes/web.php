@@ -39,15 +39,7 @@ Route::name('web.')->namespace('Frontend')->group(function(){
     });     
 });
 
-Route::name('panel.')->namespace('Backend')->group(function(){
-    Route::get('/login','PanelController@login')->name('login');
-    Route::post('/login','PanelController@loginRequest')->name('loginRequest');
-    
-    Route::group(['middleware' => ['auth']], function() {
-        Route::get('/dashboard','PanelController@dashboard')->name('dashboard');
-    });
-    
-});
 
+Auth::routes();
 
-
+Route::get('/home', 'HomeController@index')->name('home');

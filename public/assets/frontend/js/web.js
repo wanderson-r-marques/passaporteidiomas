@@ -7135,7 +7135,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 $(document).ready(function () {
   var autoplaySpeed = 7000; // Máscaras 
 
-  $('.phone').mask('(99)99999-9999'); // ReSharper disable AssignToImplicitGlobalInFunctionScope
+  $('.phone').mask('(99) 99999-9999'); // ReSharper disable AssignToImplicitGlobalInFunctionScope
 
   slider = $('.single-item').slick({
     // ReSharper restore AssignToImplicitGlobalInFunctionScope
