@@ -160,14 +160,7 @@
                                 <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
                             </div>
                         </a>
-                    </li>
-                    <li>
-                        <a class="twitter-fan-page" target="_blank" href="https://twitter.com/CNAoficial">
-                            <div class="icon tw">
-                                <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
-                            </div>
-                        </a>
-                    </li>
+                    </li>                    
                     <li>
                         <a class="whatsapp-fan-page" target="_blank" href="https://www.linkedin.com/company/472767?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A472767%2Cidx%3A2-1-5%2CtarId%3A1441229978071%2Ctas%3Acna%20idiomas">
                             <div class="icon in">

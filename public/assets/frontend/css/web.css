@@ -9719,7 +9719,9 @@ html {
     max-width: 1000px;
 }
 
-
+p {
+    text-align: justify!important;
+}
 *, ul {
     padding: 0;
     margin: 0;
@@ -9835,7 +9837,7 @@ h2 b {text-indent: -9000px;float: left;}
 .principal{
     float: right;
     width: 210px;
-    background: #272727;
+    background: #383B68;
     height: 100%;
     box-shadow: -1px 0px 5px #13100c;
     /*position: relative;*/
@@ -10442,7 +10444,7 @@ background-size: contain!important;
     }
 
     .menu-responsivo {
-        background: #272727;
+        background: #383B68;
         width: 100%;
         border-bottom: 2px solid #8a3027;
         display: none;
@@ -10568,7 +10570,7 @@ background-size: contain!important;
         }
 
         .menu-responsivo {
-            background: #272727;
+            background: #383B68;
             width: 100%;
             border-bottom: 2px solid #8a3027;
             display: block;
