@@ -1,4 +1,7 @@
 {
+    "/assets/frontend/js/web.js": "/assets/frontend/js/web.js",
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/assets/frontend/css/web.css": "/assets/frontend/css/web.css",
+    "/assets/frontend/js/passaporte.js": "/assets/frontend/js/passaporte.js"
 }
