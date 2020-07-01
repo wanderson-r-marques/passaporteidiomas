@@ -82,4 +82,30 @@ class WebController extends Controller
     {
         return view('frontend.formations.espanhol');
     }
+
+    // Unidades
+    public function camaragibe()
+    {
+        return view('frontend.units.camaragibe');
+    }
+
+    public function lourenco()
+    {
+        return view('frontend.units.lourenco');
+    }
+
+    public function carpina()
+    {
+        return view('frontend.units.carpina');
+    }
+
+    public function cabo()
+    {
+        return view('frontend.units.cabo');
+    }
+
+    public function vitoria()
+    {
+        return view('frontend.units.vitoria');
+    }
 }

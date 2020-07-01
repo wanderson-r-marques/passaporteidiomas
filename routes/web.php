@@ -29,7 +29,14 @@ Route::name('web.')->namespace('Frontend')->group(function(){
         Route::get('/formacoes/teens-young','WebController@teensYoung')->name('teens.young');
         Route::get('/formacoes/regular','WebController@regular')->name('regular');
         Route::get('/formacoes/espanhol','WebController@espanhol')->name('espanhol');
-    });      
+    }); 
+    Route::name('units.')->group(function(){
+        Route::get("/unidade/camaragibe","WebController@camaragibe")->name('camaragibe');
+        Route::get("/unidade/lourenco","WebController@lourenco")->name('lourenco');
+        Route::get("/unidade/carpina","WebController@carpina")->name('carpina');        
+        Route::get("/unidade/cabo","WebController@cabo")->name('cabo');
+        Route::get("/unidade/vitoria","WebController@vitoria")->name('vitoria');
+    });     
 });
 
 Route::name('panel.')->namespace('Backend')->group(function(){

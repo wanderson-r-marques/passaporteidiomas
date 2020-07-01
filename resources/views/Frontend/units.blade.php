@@ -24,11 +24,11 @@
                     <h2>6 UNIDADES EM PERNAMBUCO</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Camaragibe</li>
-                            <li class="breadcrumb-item">São Lourenço da Mata</li>
-                            <li class="breadcrumb-item">Carpina</li>
-                            <li class="breadcrumb-item">Vitória</li>
-                            <li class="breadcrumb-item">Cabo</li>
+                            <li class="breadcrumb-item"><a href="{{ route('web.units.camaragibe') }}"> Camaragibe</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('web.units.lourenco') }}">São Lourenço da Mata</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('web.units.carpina') }}">Carpina</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('web.units.vitoria') }}">Vitória</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('web.units.cabo') }}">Cabo</</li>
                         </ol>
                     </nav>
                     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=15g5HPBaiemaAYZ414HYNWUl-mFbzjqZ-" class="img-responsive" height="650"></iframe>

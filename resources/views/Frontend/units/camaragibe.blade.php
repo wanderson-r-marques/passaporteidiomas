@@ -10,28 +10,23 @@
                     <a href='{{ route("web.home") }}' class="sub-menu-ativo conheca-cna">Principal</a>
                 </li>
                 <li>
-                    <a  class="sub-menu-ativo noticias-cna">Formações</a>
+                    <a href='{{ route("web.units") }}' class="sub-menu-ativo noticias-cna">Unidades</a>
                 </li>
                 <li>
-                    <a href='{{ route("web.formations.teens.young") }}' class="sub-menu-ativo noticias-cna">Teens Young</a>
+                    <a href='{{ route("web.units.camaragibe") }}' class="sub-menu-ativo noticias-cna">Camaragibe</a>
                 </li>
             </ul>
         </div>
         <div class="envolve-h2-idioma-padrao">
             <div class="h2-idioma-padrao">
-                <h1 class="ingles-crianca icone-conheca">Teens Young</h1>
+                <h1 class="ingles-crianca icone-conheca">Camaragibe</h1>
             </div>
         </div>
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
                     <div class="d-md-flex justify-content-start">
-                        <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/teens-young.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
-                            Inglês para quem gosta de assistir séries, cartoons, filmes, escutar músicas, jogar online, conversar e interagir com o mundo.
-                            O curso de inglês para adolescentes solidifica o processo de alfabetização em inglês iniciado nas escolas regulares.
-                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15803.181858872833!2d-34.9800447!3d-8.0200154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9ca752d14cb848!2sPassaporte%20Idiomas%20-%20Camaragibe!5e0!3m2!1spt-BR!2sbr!4v1593570270555!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
