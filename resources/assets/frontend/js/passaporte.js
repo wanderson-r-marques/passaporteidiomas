@@ -2,6 +2,9 @@ $(document).ready(function () {
 
     var autoplaySpeed = 7000;
 
+    // Máscaras 
+    $('.phone').mask('(99)99999-9999');
+
     // ReSharper disable AssignToImplicitGlobalInFunctionScope
     slider = $('.single-item').slick({
         // ReSharper restore AssignToImplicitGlobalInFunctionScope

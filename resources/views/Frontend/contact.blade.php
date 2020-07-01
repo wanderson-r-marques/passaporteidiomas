@@ -7,7 +7,7 @@
         <div class="sub-menu-idiomas">
             <ul>
                 <li><a href='{{ route("web.home") }}' class="sub-menu-ativo conheca-cna">Principal</a></li>
-                <li><a href='{{ route("web.who.we.are") }}' class="sub-menu-ativo noticias-cna">Formações</a></li>
+                <li><a href='{{ route("web.contact") }}' class="sub-menu-ativo noticias-cna">Fale Conosco</a></li>
             </ul>
         </div>
         <div class="envolve-h2-idioma-padrao">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Telefone</label>
-                                <input required type="text" name="phone" class="form-control" placeholder="Digite um telefone para contato" id="inputPassword4">
+                                <input required type="text" name="phone" class="form-control phone" placeholder="Digite um telefone para contato" id="inputPassword4">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">E-mail</label>

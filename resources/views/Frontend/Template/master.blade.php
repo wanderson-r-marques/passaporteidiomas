@@ -20,10 +20,10 @@
     <link rel="stylesheet" type="text/css" href="{{mix('assets/frontend/css/web.css')}}" />
     <!--End dos arquivos CSS-->
 
-    <!--Início dos arquivos Javascript-->
+    <!--Início dos arquivos Javascript-->    
     <script src="{{url('assets/frontend/bundles/scripts4050?v=f4uixSapoYwJNJCr1O1hNCS9laXjlFeEM51ZdFk3cXo1')}}"></script>
 
-    <script type="text/javascript" src="assets/frontend/js/passaporte.js"></script>
+    <script type="text/javascript" src="{{mix('assets/frontend/js/web.js')}}"></script>
     <!--End dos arquivos Js-->
 
     <meta property="og:image" content="{{url('assets/frontend/css/images/share_fb.png')}}" />
