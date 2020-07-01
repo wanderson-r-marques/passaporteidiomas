@@ -168,6 +168,13 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a class="youtube-fan-page" target="_blank" href="https://www.youtube.com/channel/UC2ske3iLXp-nfs1-JZpOxJA">
+                            <div class="icon you">
+                                <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
