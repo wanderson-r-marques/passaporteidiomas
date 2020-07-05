@@ -16,8 +16,7 @@
         {{--Final do Slider--}}
     </div>
     <a class="p-slider" href="#" style="display: none"></a>
-    <style type="text/css">        
-
+    <style type="text/css">
         @media only screen and (max-width: 980px) {
             .sld-img-1 {
                 background: url(assets/frontend/css/images/sliders/01-m.jpg) no-repeat center center !important;
@@ -26,8 +25,8 @@
             .sld-img-2 {
                 background: url(assets/frontend/css/images/sliders/02-m.jpg) no-repeat center center !important;
             }
-            
-        }       
+
+        }
 
         body,
         html {
@@ -38,10 +37,14 @@
             /* ReSharper disable CssBrowserCompatibility */
             width: device-width;
             /* ReSharper restore CssBrowserCompatibility */
-        }      
-
-       
+        }
     </style>
+
+    <!-- Imagem do chat -->
+    <a href="https://web.whatsapp.com/send?phone=5581992361922" target="_blank" class="chat">
+        <img src="{{ url('assets/frontend/css/images/btn-chat.png') }}" alt="Chat">
+    </a>
+
 </div>
 </div>
 @endsection

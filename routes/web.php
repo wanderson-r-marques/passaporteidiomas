@@ -1,6 +1,6 @@
 <?php
 
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,5 +41,4 @@ Route::name('web.')->namespace('Frontend')->group(function(){
 
 
 Auth::routes(['register' => false]);
-
 Route::get('/home', 'HomeController@index')->name('home');

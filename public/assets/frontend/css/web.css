@@ -9722,6 +9722,13 @@ html {
 p {
     text-align: justify!important;
 }
+
+.chat{
+    z-index: 999; 
+    position: absolute; 
+    bottom: 10px; 
+    left: 15px;
+}
 *, ul {
     padding: 0;
     margin: 0;
