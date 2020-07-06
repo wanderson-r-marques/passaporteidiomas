@@ -41,4 +41,9 @@ Route::name('web.')->namespace('Frontend')->group(function(){
 
 
 Auth::routes(['register' => false]);
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+// Rotas do dashboard
+Route::name('dashboard.')->namespace('Backend')->group(function(){
+    Route::resource('dashboard/blogs','BlogController')->middleware('auth');
+});

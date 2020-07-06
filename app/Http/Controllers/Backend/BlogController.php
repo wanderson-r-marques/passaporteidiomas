@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\Blog;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -14,7 +15,11 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+
+        $blogs = Blog::paginate(10);        
+        return view('backend.blog.index',[
+            'blogs' => $blogs
+        ]);
     }
 
     /**
@@ -24,7 +29,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.blog.create');
     }
 
     /**
