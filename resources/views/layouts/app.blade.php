@@ -12,12 +12,26 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <!-- <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script> -->
+    <script src="{{ asset('assets/backend/js/tinymce/tinymce.js') }}"></script>
 
-    <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-    <script type="application/javascript"> 
-        CKEDITOR.replace('content');
+    <script>
+        tinymce.init({
+            selector: "#content",
+            height: 500,
+            resize: false,
+            autosave_ask_before_unload: false,
+            powerpaste_allow_local_images: true,
+            plugins: [
+                "advlist anchor autolink codesample fullscreen help image imagetools",
+                " lists link media noneditable preview",
+                " searchreplace table template visualblocks wordcount"
+            ],
+            toolbar: "insertfile a11ycheck undo redo | bold italic | forecolor backcolor | template codesample | alignleft aligncenter alignright alignjustify | bullist numlist | link image tinydrive",
+
+        });
     </script>
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">

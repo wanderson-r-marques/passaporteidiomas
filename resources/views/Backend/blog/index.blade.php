@@ -7,7 +7,7 @@
         <hr class="w-100">
         <div class="d-flex justify-content-between w-100">
             <a href="{{route('dashboard.blogs.create')}}" class="btn btn-success h-75">Cadastrar</a>
-            <div>{{ $blogs->links() }}</div>            
+            <div>{{ $blogs->links() }}</div>
         </div>
 
         <table class="table table-bordered table-striped ">
@@ -22,7 +22,11 @@
             <tbody>
                 @foreach($blogs as $blog)
                 <tr>
-                    <td>{{$blog->slider}}</td>
+                    <td>
+                        @if($blog->slider)
+                        <img width="100" src='{{ url("storage/{$blog->slider}") }}' alt="{{ $blog->title }}">
+                        @endif
+                    </td>
                     <td>{{$blog->title}}</td>
                     <td>{{$blog->created_at}}</td>
                     <td>
@@ -33,10 +37,10 @@
                 @endforeach
             </tbody>
         </table>
-        
+
         <div class="d-flex mt-2 justify-content-between w-100">
             <a href="{{route('dashboard.blogs.create')}}" class="btn btn-success h-75">Cadastrar</a>
-            <div>{{ $blogs->links() }}</div>            
+            <div>{{ $blogs->links() }}</div>
         </div>
     </div>
 </div>

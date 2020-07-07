@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Blog;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BlogController extends Controller
 {
@@ -16,8 +17,8 @@ class BlogController extends Controller
     public function index()
     {
 
-        $blogs = Blog::paginate(10);        
-        return view('backend.blog.index',[
+        $blogs = Blog::paginate(10);
+        return view('backend.blog.index', [
             'blogs' => $blogs
         ]);
     }
@@ -40,7 +41,18 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only('title','description','content');
+        $data['user_id'] = Auth::user()->id;
+        
+        if($request->hasFile('slider') && $request->slider->isValid()){
+            $sliderPath = $request->slider->store('sliders');
+            $data['slider'] = $sliderPath;
+        }
+
+        Blog::create($data);
+
+        return redirect()->route('dashboard.blogs.index');
+
     }
 
     /**
