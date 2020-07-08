@@ -28,10 +28,10 @@
                         @endif
                     </td>
                     <td>{{$blog->title}}</td>
-                    <td>{{$blog->created_at}}</td>
+                    <td>{{ date('d/m/Y H:i:s', strtotime($blog->created_at)) }}</td>
                     <td>
-                        <a href="" class="btn btn-warning">Editar</a>
-                        <a href="" class="btn btn-danger">Excluir</a>
+                        <a href="{{ route('dashboard.blogs.edit',$blog->slug) }}" class="btn btn-warning">Editar</a>
+                        <a href="{{ route('dashboard.blogs.destroy',$blog->slug) }}" class="btn btn-danger">Excluir</a>
                     </td>
                 </tr>
                 @endforeach

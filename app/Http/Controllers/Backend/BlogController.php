@@ -6,6 +6,7 @@ use App\Blog;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -48,8 +49,11 @@ class BlogController extends Controller
             $sliderPath = $request->slider->store('sliders');
             $data['slider'] = $sliderPath;
         }
-
-        Blog::create($data);
+        
+        if(Blog::create($data))
+            flash('Notícia cadastrada com sucesso!')->success();
+        else
+            flash('Ocorreu um erro no cadastro!')->danger();
 
         return redirect()->route('dashboard.blogs.index');
 
@@ -74,7 +78,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        return view('backend.blog.edit',compact('blog'));
     }
 
     /**
@@ -86,7 +90,22 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+        $data = $request->only('title','description','content');
+        $data['user_id'] = Auth::user()->id;
+
+        if($request->hasFile('slider') && $request->slider->isValid()){
+            $sliderPath = $request->slider->store('slider');
+            $data['slider'] = $sliderPath;
+            Storage::delete($blog->image);
+        }        
+
+        if($blog->update($data))
+            flash("Notícia editada com sucesso!")->success();
+        else
+            flash("Ocorreu um erro na edição!")->danger();
+        
+
+        return redirect()->route('dashboard.blogs.index');
     }
 
     /**
