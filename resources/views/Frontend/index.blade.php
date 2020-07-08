@@ -2,18 +2,13 @@
 @section('content')
 <div class="pg_inicial">
     <div class="slider single-item">
-        {{--Início do slider--}}
-        <div class="sld-img-1 sld-home" style="background: url(assets/frontend/css/images/sliders/01.jpg) no-repeat  center center">
-
-            <a href="https://passaporteidiomas.com.br/"></a>
-        </div>
-        {{--Final do Slider--}}
-        {{--Início do slider--}}
-        <div class="sld-img-2 sld-home" style="background: url(assets/frontend/css/images/sliders/02.jpg) no-repeat  center center">
-
-            <a href="https://passaporteidiomas.com.br/"></a>
-        </div>
-        {{--Final do Slider--}}
+        @foreach($blogs AS $blog)
+            {{--Início do slider--}}
+            <div class="sld-img-1 sld-home" style='background: url({{ url("storage/{$blog->slider}") }}) no-repeat  center center'>
+                <a href="{{route('web.blog.show',$blog->slug)}}"></a>
+            </div>
+            {{--Final do Slider--}}
+        @endforeach
     </div>
     <a class="p-slider" href="#" style="display: none"></a>
     <style type="text/css">

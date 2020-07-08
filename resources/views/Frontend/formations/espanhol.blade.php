@@ -25,10 +25,10 @@
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
+                    
                     <div class="d-md-flex justify-content-start">
                         <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/espanhol.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <p class="flex-fill pl-3 pt-0">
                         Curso de Espanhol direcionado para adolescentes e adultos que estão dispostos a aprender a língua predominante do nosso nosso continente. O ensino é voltado para a aprendizagem da conversação e da beleza da língua espanhola que está presente em nosso cotidiano, incentivando a ampliação das habilidades em ser bilíngue.
                         </p>
                     </div>

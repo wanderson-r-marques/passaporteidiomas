@@ -25,10 +25,10 @@
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
+                    
                     <div class="d-md-flex justify-content-start">
                         <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/teens-young.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <p class="flex-fill pl-3 pt-0">
                             Inglês para quem gosta de assistir séries, cartoons, filmes, escutar músicas, jogar online, conversar e interagir com o mundo.
                             O curso de inglês para adolescentes solidifica o processo de alfabetização em inglês iniciado nas escolas regulares.
                         </p>

@@ -25,10 +25,10 @@
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
+                    
                     <div class="d-md-flex justify-content-start">
                         <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/regular.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <p class="flex-fill pl-3 pt-0">
                             Com foco na comunicação oral e escrita seja em ambiente de trabalho ou casual o curso de inglês para adultos é o que você precisa para derrubar qualquer barreira no processo de comunicação entre você e a tão esperada promoção ou a tão sonhada viagem.
                         </p>
                     </div>

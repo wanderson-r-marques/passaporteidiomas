@@ -25,10 +25,10 @@
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
+                    
                     <div class="d-md-flex justify-content-start">
                         <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/pre-teens.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <p class="flex-fill pl-3 pt-0">
                             Inglês desenvolvido para crianças e pré adolescentes dos 09 aos 12 anos de idade através de aulas interativas, comunicativas e lúdicas. O curso de inglês para pré adolescentes enfatiza o vocabulário internalizado durante as fases iniciais e apresenta um novo universo de possibilidades comunicativas.
                         </p>
                     </div>

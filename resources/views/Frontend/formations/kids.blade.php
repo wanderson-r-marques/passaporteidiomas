@@ -25,10 +25,10 @@
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    <h2>Descrição</h2>
+                   
                     <div class="d-md-flex justify-content-start">
                         <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/kids.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <p class="flex-fill pl-3 pt-0">
                             Inglês para crianças a partir dos 6 anos de idade que estão em período de alfabetização, no qual assimilam com mais facilidade um novo idioma. A aquisição da língua se dá por meio de jogos, atividades interativas, cooking classes e aulas interdisciplinares.
                         </p>
                     </div>

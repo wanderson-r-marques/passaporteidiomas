@@ -1427,7 +1427,7 @@ h2 b {text-indent: -9000px;float: left;}
 }
 @media (min-width:980px) {
     .principal .menu li:last-child{
-        padding-bottom:55px;
+        padding-bottom:5px!important;
     }
     .principal .menu li:last-child .int-menu{
         top:-60px;
@@ -10276,6 +10276,9 @@ background-size: contain!important;
 }
 
 @media (max-width:500px) {
+    p{
+        margin-top: 20px!important;
+    }
     .portais ul li:last-child {        
         left: 0px !important;
         opacity: 1;
@@ -11482,6 +11485,7 @@ background-size: contain!important;
     .envolve-h2-idioma-padrao {
         float: left;
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .h2-idioma-padrao {
@@ -14902,10 +14906,18 @@ background-size: contain!important;
     width: 100%;
 }
 
+.img-formations{
+    width: 200px;
+}
+
 @media (max-width: 767.98px) {
     .row.align-items-center.vh-100 {
         padding-top: 2rem;
         height: auto;
+    }
+
+    .img-formations{
+        width: 100%;
     }
 
     .sld-home-1 .container{

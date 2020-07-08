@@ -20,6 +20,8 @@ Route::name('web.')->namespace('Frontend')->group(function(){
     Route::get('/formacoes','WebController@formations')->name('formations');
     Route::get('/unidades','WebController@units')->name('units');
     Route::get('/contato','WebController@contact')->name('contact');
+    Route::get('/blog','WebController@blogIndex')->name('blog');
+    Route::get('/blog/{blog:slug}','WebController@blogShow')->name('blog.show');
     Route::post('/contato','WebController@sendContact')->name('send.contact');
     Route::name('formations.')->group(function(){        
         Route::get('/formacoes/kindergarten','WebController@kindergarten')->name('kindergarten');

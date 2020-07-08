@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Blog;
 use App\Http\Controllers\Controller;
 use App\Jobs\newContatc;
 use App\Mail\newContact;
@@ -12,7 +13,8 @@ class WebController extends Controller
 {
     public function home()
     {
-        return view('frontend.index');
+        $blogs = Blog::all();
+        return view('frontend.index', compact('blogs'));
     }
 
     public function theCourse()
@@ -107,5 +109,16 @@ class WebController extends Controller
     public function vitoria()
     {
         return view('frontend.units.vitoria');
+    }
+
+    // Blog
+
+    public function blogShow(Blog $blog){               
+        return view('frontend.blog.show',compact('blog'));
+    }
+
+    public function blogIndex(){
+        $blogs = Blog::all();
+        return view('frontend.blog.index',compact('blogs'));
     }
 }

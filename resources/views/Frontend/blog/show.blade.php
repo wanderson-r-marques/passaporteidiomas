@@ -10,29 +10,28 @@
                     <a href='{{ route("web.home") }}' class="sub-menu-ativo conheca-cna">Principal</a>
                 </li>
                 <li>
-                    <a class="sub-menu-ativo noticias-cna">Formações</a>
-                </li>
-                <li>
-                    <a href='{{ route("web.formations.kindergarten") }}' class="sub-menu-ativo noticias-cna">Kindergarten</a>
+                    <a href='{{ route("web.blog") }}' class="sub-menu-ativo noticias-cna">Blog</a>
                 </li>
             </ul>
         </div>
         <div class="envolve-h2-idioma-padrao">
             <div class="h2-idioma-padrao">
-                <h1 class="ingles-crianca icone-conheca">Kindergarten</h1>
+                <h1 class="ingles-crianca icone-conheca">Blog</h1>
             </div>
         </div>
         <div id="content-1" class="conteudo-div content">
             <div class="max-1000px">
                 <div class="sobre-cna">
-                    
-                    <div class="d-md-flex justify-content-start">
-                        <img class="img-formations flex-fill" src="{{ url('assets/frontend/css/images/formations/kindergarten.png') }}" width="400" alt="">
-                        <p class="flex-fill pl-3 pt-0">
-                        Inglês desenvolvido para crianças a partir dos 03 anos, período em que a criança ainda está em processo de aquisição de linguagem e carga cultural. Quanto mais cedo, melhor!
+
+                    <div class="d-md-flex flex-column justify-content-start">
+                        <img width="100%" class="flex-fill" src='{{ url("storage/{$blog->slider}") }}' width="400" alt="">
+                        <h2 class="mt-5">{{ $blog->title }}</h2>
+                        <p class="flex-fill pl-3 pt-0 mt-0">
+                        <h2>{!! $blog->content !!}</h2>
                         </p>
-                    </div>                                     
-                </div>                
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

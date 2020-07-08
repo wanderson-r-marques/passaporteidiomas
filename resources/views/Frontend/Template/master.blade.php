@@ -51,7 +51,7 @@
             <a id="menu_mobile" href="javascript:void(0);">
                 <img alt="" src="{{url('assets/frontend/css/images/menu-mobile.png')}}" />
             </a>
-            <p><img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}" /></p>
+            <p class="text-center"><img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}" /></p>
         </div>
         <nav class="principal" id="principal">
             <div class="logo">
@@ -129,7 +129,7 @@
                     <div class="icon s-fluente">
                         <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}" />
                     </div>
-                    <a class="mob-w menu-seja-fluente" href="javascript:">BLOG</a>
+                    <a class="mob-w menu-seja-fluente" href="{{ route('web.blog') }}">BLOG</a>
                 </li>
                 <li class="only-mobile">
                     <div class="icon s-corporativo">
@@ -142,7 +142,7 @@
                     <div class="icon contato">
                         <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}" />
                     </div>
-                    <a class="mob-w menu-fale-conosco" href="{{ route('web.contact') }}">FALE <br /> CONOSCO</a>
+                    <a class="mob-w menu-fale-conosco" href="{{ route('web.contact') }}">CONTATO</a>
                 </li>
             </ul>
             <div class="rbe">

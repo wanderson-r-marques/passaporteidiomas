@@ -1427,7 +1427,7 @@ h2 b {text-indent: -9000px;float: left;}
 }
 @media (min-width:980px) {
     .principal .menu li:last-child{
-        padding-bottom:55px;
+        padding-bottom:5px!important;
     }
     .principal .menu li:last-child .int-menu{
         top:-60px;
