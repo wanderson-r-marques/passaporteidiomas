@@ -116,6 +116,11 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        if($blog->delete())
+            flash('Notícia deletada')->success();
+        else
+            flash('Ocorreu um erro na exclusão!');
+
+        return redirect()->route('dashboard.blogs.index');
     }
 }
