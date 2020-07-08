@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Blog;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BlogRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -40,7 +41,7 @@ class BlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BlogRequest $request)
     {
         $data = $request->only('title','description','content');
         $data['user_id'] = Auth::user()->id;
@@ -88,7 +89,7 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(BlogRequest $request, Blog $blog)
     {
         $data = $request->only('title','description','content');
         $data['user_id'] = Auth::user()->id;
@@ -102,8 +103,7 @@ class BlogController extends Controller
         if($blog->update($data))
             flash("Notícia editada com sucesso!")->success();
         else
-            flash("Ocorreu um erro na edição!")->danger();
-        
+            flash("Ocorreu um erro na edição!")->danger();        
 
         return redirect()->route('dashboard.blogs.index');
     }

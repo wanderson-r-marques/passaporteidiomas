@@ -94,6 +94,15 @@
 
         <main class="py-4">
             @include('flash::message')
+
+            @if(isset($errors) && count($errors) > 0)
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $erro)
+                        <p>{!! $erro !!}</p>
+                    @endforeach
+                </div>
+            @endif
+
             @yield('content')
         </main>
     </div>
