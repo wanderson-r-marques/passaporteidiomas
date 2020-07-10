@@ -180,6 +180,8 @@
         </nav>
         @include('flash::message')
         @yield('content')
+
+        
 </body>
 
 </html>

@@ -13,7 +13,7 @@ class WebController extends Controller
 {
     public function home()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::where('is_slider','=','1')->get();        
         return view('frontend.index', compact('blogs'));
     }
 

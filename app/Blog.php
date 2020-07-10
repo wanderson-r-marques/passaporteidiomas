@@ -14,7 +14,7 @@ class Blog extends Model
     use HasSlug;
 
     protected $fillable = [
-        'user_id','title','slug','description','content','slider'
+        'user_id','title','slug','description','content','slider','slider2','is_slider'
     ];
 
     /**

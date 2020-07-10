@@ -3,24 +3,21 @@
 <div class="pg_inicial">
     <div class="slider single-item">
         @foreach($blogs AS $blog)
-            {{--Início do slider--}}
-            <div class="sld-img-1 sld-home" style='background: url({{ url("storage/{$blog->slider}") }}) no-repeat  center center'>
-                <a href="{{route('web.blog.show',$blog->slug)}}"></a>
-            </div>
-            {{--Final do Slider--}}
+        {{--Início do slider--}}
+        <div class="sld-img-{{$blog->id}} sld-home" style='background: url({{ url("storage/{$blog->slider}") }}) no-repeat  center center'>
+            <a href="{{route('web.blog.show',$blog->slug)}}"></a>
+        </div>
+        {{--Final do Slider--}}
         @endforeach
     </div>
     <a class="p-slider" href="#" style="display: none"></a>
     <style type="text/css">
-        @media only screen and (max-width: 980px) {
-            .sld-img-1 {
-                background: url(assets/frontend/css/images/sliders/01-m.jpg) no-repeat center center !important;
-            }
-
-            .sld-img-2 {
-                background: url(assets/frontend/css/images/sliders/02-m.jpg) no-repeat center center !important;
-            }
-
+        @media only screen and (max-width: 980px) {            
+            @foreach($blogs AS $blog) 
+                .sld-img-{{$blog->id}} {
+                    background: url({{ url("storage/{$blog->slider2}") }}) no-repeat center center !important;
+                }
+            @endforeach 
         }
 
         body,

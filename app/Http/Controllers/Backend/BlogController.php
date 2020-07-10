@@ -43,21 +43,25 @@ class BlogController extends Controller
      */
     public function store(BlogRequest $request)
     {
-        $data = $request->only('title','description','content');
+        $data = $request->only('title', 'description', 'content', 'is_slider');
         $data['user_id'] = Auth::user()->id;
-        
-        if($request->hasFile('slider') && $request->slider->isValid()){
+
+        if ($request->hasFile('slider') && $request->slider->isValid()) {
             $sliderPath = $request->slider->store('sliders');
             $data['slider'] = $sliderPath;
         }
-        
-        if(Blog::create($data))
+
+        if ($request->hasFile('slider2') && $request->slider2->isValid()) {
+            $sliderPath2 = $request->slider2->store('sliders');
+            $data['slider2'] = $sliderPath2;
+        }
+
+        if (Blog::create($data))
             flash('Notícia cadastrada com sucesso!')->success();
         else
             flash('Ocorreu um erro no cadastro!')->danger();
 
         return redirect()->route('dashboard.blogs.index');
-
     }
 
     /**
@@ -79,7 +83,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('backend.blog.edit',compact('blog'));
+        return view('backend.blog.edit', compact('blog'));
     }
 
     /**
@@ -91,19 +95,25 @@ class BlogController extends Controller
      */
     public function update(BlogRequest $request, Blog $blog)
     {
-        $data = $request->only('title','description','content');
+        $data = $request->only('title', 'description', 'content', 'is_slider');
         $data['user_id'] = Auth::user()->id;
 
-        if($request->hasFile('slider') && $request->slider->isValid()){
-            $sliderPath = $request->slider->store('slider');
+        if ($request->hasFile('slider') && $request->slider->isValid()) {
+            $sliderPath = $request->slider->store('sliders');
             $data['slider'] = $sliderPath;
-            Storage::delete($blog->image);
-        }        
+            Storage::delete($blog->slider);
+        }
 
-        if($blog->update($data))
+        if ($request->hasFile('slider2') && $request->slider2->isValid()) {
+            $sliderPath2 = $request->slider2->store('sliders');
+            $data['slider2'] = $sliderPath2;
+            Storage::delete($blog->slider2);
+        }
+
+        if ($blog->update($data))
             flash("Notícia editada com sucesso!")->success();
         else
-            flash("Ocorreu um erro na edição!")->danger();        
+            flash("Ocorreu um erro na edição!")->danger();
 
         return redirect()->route('dashboard.blogs.index');
     }
@@ -116,11 +126,13 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        if($blog->delete())
+        if ($blog->delete()) {
+            Storage::delete($blog->slider);
+            Storage::delete($blog->slider2);
             flash('Notícia deletada')->success();
-        else
+        } else {
             flash('Ocorreu um erro na exclusão!');
-
+        }
         return redirect()->route('dashboard.blogs.index');
     }
 }

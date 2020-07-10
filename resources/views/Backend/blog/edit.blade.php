@@ -17,9 +17,25 @@
                 <label for="description">Descrição</label>
                 <textarea name="description" id="description" class="form-control">{{ $blog->description }}</textarea>
             </div>
-            <div class="custom-file mt-4 mb-4">
+            <span>Banner</span>
+            <div class="custom-file mt-1 mb-4">
                 <input type="file" name="slider" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile">Selecione a imagem</label>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input name="is_slider" {{ (old('is_slider') || $blog->is_slider ? 'checked' : '') }} value="1" class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        É um slider?
+                    </label>
+                </div>
+            </div>
+            <div class="{{ !$blog->is_slider ? 'd-none': ''}} slider2">
+                <span>Banner Mobile</span>
+                <div class="custom-file mt-1 mb-4">
+                    <input type="file" name="slider2" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Selecione a imagem</label>
+                </div>
             </div>
             <div class="form-group">
                 <label for="content">Conteúdo</label>
@@ -31,4 +47,19 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script>
+    function isSlider() {
+        const slider2 = document.querySelector('.slider2')        
+        document.querySelector('input[name="is_slider"]').onclick = function() {
+            if (this.checked)
+                slider2.classList.remove('d-none')
+            else
+                slider2.classList.add('d-none')
+        }
+    }
+    isSlider()
+</script>
 @endsection

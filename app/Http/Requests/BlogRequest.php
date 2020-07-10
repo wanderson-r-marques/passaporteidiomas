@@ -27,7 +27,8 @@ class BlogRequest extends FormRequest
             'title' => 'required|min:4|max:255',
             'description' => 'required|min:10',
             'content' => 'required|min:10',
-            'slider' => 'required|image|mimes:jpeg,png,jpg|max:2048'
+            'slider' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'slider2' => 'image|mimes:jpeg,png,jpg|max:2048'
         ];
     }
 
@@ -37,7 +38,8 @@ class BlogRequest extends FormRequest
             'title' => 'Título',
             'description' => 'Descrição',
             'content' => 'Conteudo',
-            'slider' => 'Slider'
+            'slider' => 'Slider',
+            'slider2' => 'Slider 2'
         ];
     }
 }
