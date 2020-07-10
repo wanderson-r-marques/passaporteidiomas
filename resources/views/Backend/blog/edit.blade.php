@@ -11,20 +11,20 @@
             @method('put')
             <div class="form-group">
                 <label for="title">Título</label>
-                <input type="text" name="title" id="title" value="{{ $blog->title }}" class="form-control">
+                <input type="text" required name="title" id="title" value="{{ $blog->title }}" class="form-control">
             </div>
             <div class="form-group">
                 <label for="description">Descrição</label>
-                <textarea name="description" id="description" class="form-control">{{ $blog->description }}</textarea>
+                <textarea required name="description" id="description" class="form-control">{{ $blog->description }}</textarea>
             </div>
             <span>Banner</span>
             <div class="custom-file mt-1 mb-4">
-                <input type="file" name="slider" class="custom-file-input" id="customFile">
+                <input type="file" required name="slider" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile">Selecione a imagem</label>
             </div>
             <div class="form-group">
                 <div class="form-check">
-                    <input name="is_slider" {{ (old('is_slider') || $blog->is_slider ? 'checked' : '') }} value="1" class="form-check-input" type="checkbox" id="gridCheck">
+                    <input  name="is_slider" {{ (old('is_slider') || $blog->is_slider ? 'checked' : '') }} value="1" class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
                         É um slider?
                     </label>
@@ -39,7 +39,7 @@
             </div>
             <div class="form-group">
                 <label for="content">Conteúdo</label>
-                <textarea name="content" id="content" class="form-control">{{ $blog->content }}</textarea>
+                <textarea required name="content" id="content" class="form-control">{{ $blog->content }}</textarea>
             </div>
             <button class="btn btn-warning" type="submit">Editar</button>
         </form>
@@ -54,10 +54,15 @@
     function isSlider() {
         const slider2 = document.querySelector('.slider2')        
         document.querySelector('input[name="is_slider"]').onclick = function() {
-            if (this.checked)
+            const inputSlider2 = slider2.children[1].children[0]            
+            if (this.checked){
                 slider2.classList.remove('d-none')
-            else
+                inputSlider2.setAttribute('required','required')                
+            }else{
                 slider2.classList.add('d-none')
+                inputSlider2.removeAttribute('required')
+            }
+
         }
     }
     isSlider()
