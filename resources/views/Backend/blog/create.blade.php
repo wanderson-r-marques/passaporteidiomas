@@ -11,21 +11,21 @@
             @csrf
             <div class="form-group">
                 <label for="title">Título</label>
-                <input type="text" required value="{{ old('title') }}" name="title" id="title" class="form-control">
+                <input type="text"  value="{{ old('title') }}" name="title" id="title" class="form-control">
             </div>
 
             <div class="form-group">
                 <label for="description">Descrição</label>
-                <textarea required name="description" id="description" class="form-control">{{ old('description') }}</textarea>
+                <textarea  name="description" id="description" class="form-control">{{ old('description') }}</textarea>
             </div>
             <span>Banner</span>
             <div class="custom-file mt-1 mb-4">
-                <input type="file" required name="slider" class="custom-file-input" id="customFile">
+                <input type="file" name="slider" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile">Selecione a imagem</label>
             </div>
             <div class="form-group">
                 <div class="form-check">
-                    <input name="is_slider" {{ (old('is_slider') ? 'checked' : '') }} value="1" class="form-check-input" type="checkbox" id="gridCheck">
+                    <input name="is_slider" {{ (old('is_slider') ? 'checked' : '') }} value="1" class="form-check-input checkSlider2" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
                         É um slider?
                     </label>
@@ -40,7 +40,7 @@
             </div>
             <div class="form-group">
                 <label for="content">Conteúdo</label>
-                <textarea name="content" required id="content" class="form-control">{{ old('content') }}</textarea>
+                <textarea  name="content" id="content" class="form-control">{{ old('content') }}</textarea>
             </div>
 
             <button class="btn btn-primary" type="submit">Cadastrar</button>
@@ -53,15 +53,22 @@
 @section('scripts')
 <script>
     function isSlider() {
-        const slider2 = document.querySelector('.slider2')        
+        const slider2 = document.querySelector('.slider2')
+        const checkSlider2 = document.querySelector('.checkSlider2')
+
+        if (checkSlider2.checked) {
+            slider2.classList.remove('d-none')
+            inputSlider2.setAttribute('', '')
+        }
+
         document.querySelector('input[name="is_slider"]').onclick = function() {
-            const inputSlider2 = slider2.children[1].children[0]            
-            if (this.checked){
+            const inputSlider2 = slider2.children[1].children[0]
+            if (this.checked) {
                 slider2.classList.remove('d-none')
-                inputSlider2.setAttribute('required','required')                
-            }else{
+                inputSlider2.setAttribute('', '')
+            } else {
                 slider2.classList.add('d-none')
-                inputSlider2.removeAttribute('required')
+                inputSlider2.removeAttribute('')
             }
 
         }

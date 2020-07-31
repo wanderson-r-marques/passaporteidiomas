@@ -13,28 +13,33 @@ class WebController extends Controller
 {
     public function home()
     {
-        $blogs = Blog::where('is_slider','=','1')->get();        
-        return view('frontend.index', compact('blogs'));
+        $blogs = Blog::where('is_slider', '=', '1')->get();
+        return view('Frontend.index', compact('blogs'));
     }
 
     public function theCourse()
     {
-        return view('frontend.the-course');
+        return view('Frontend.the-course');
     }
 
     public function formations()
     {
-        return view('frontend.formations');
+        return view('Frontend.formations');
     }
 
     public function units()
     {
-        return view('frontend.units');
+        return view('Frontend.units');
+    }
+
+    public function cloud()
+    {
+        return view('Frontend.you-in-the-clouds');
     }
 
     public function contact()
     {
-        return view('frontend.contact');
+        return view('Frontend.contact');
     }
 
     public function sendContact(Request $request)
@@ -52,73 +57,75 @@ class WebController extends Controller
     // Formações
     public function kids()
     {
-        return view('frontend.formations.kids');
+        return view('Frontend.formations.kids');
     }
 
     public function kindergarten()
     {
-        return view('frontend.formations.kindergarten');
+        return view('Frontend.formations.kindergarten');
     }
 
     public function preTeens()
     {
-        return view('frontend.formations.pre-teens');
+        return view('Frontend.formations.pre-teens');
     }
 
     public function teens()
     {
-        return view('frontend.formations.teens');
+        return view('Frontend.formations.teens');
     }
 
     public function teensYoung()
     {
-        return view('frontend.formations.teens-young');
+        return view('Frontend.formations.teens-young');
     }
 
     public function regular()
     {
-        return view('frontend.formations.regular');
+        return view('Frontend.formations.regular');
     }
 
     public function espanhol()
     {
-        return view('frontend.formations.espanhol');
+        return view('Frontend.formations.espanhol');
     }
 
     // Unidades
     public function camaragibe()
     {
-        return view('frontend.units.camaragibe');
+        return view('Frontend.units.camaragibe');
     }
 
     public function lourenco()
     {
-        return view('frontend.units.lourenco');
+        return view('Frontend.units.lourenco');
     }
 
     public function carpina()
     {
-        return view('frontend.units.carpina');
+        return view('Frontend.units.carpina');
     }
 
     public function cabo()
     {
-        return view('frontend.units.cabo');
+        return view('Frontend.units.cabo');
     }
 
     public function vitoria()
     {
-        return view('frontend.units.vitoria');
+        return view('Frontend.units.vitoria');
     }
 
     // Blog
 
-    public function blogShow(Blog $blog){               
-        return view('frontend.blog.show',compact('blog'));
+    public function blogShow(Blog $blog)
+    {
+        return view('Frontend.blog.show', compact('blog'));
     }
 
-    public function blogIndex(){
+    public function blogIndex()
+    {
         $blogs = Blog::all();
-        return view('frontend.blog.index',compact('blogs'));
+        return view('Frontend.blog.index', compact('blogs'));
     }
 }

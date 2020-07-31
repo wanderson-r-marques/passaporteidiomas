@@ -9661,18 +9661,20 @@ em.invalid {
 
 @media only screen and (max-width: 980px) {
     .sld-img-1 {
-        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_experimenta_fev2020.jpg') no-repeat center center !important;
+        background: url("http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_experimenta_fev2020.jpg")
+            no-repeat center center !important;
     }
 
     .sld-img-2 {
-        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_institucional_camp2020.jpg') no-repeat center center !important;
+        background: url("http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_institucional_camp2020.jpg")
+            no-repeat center center !important;
     }
 
     .sld-img-5 {
-        background: url('http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_camiseta_2.jpg') no-repeat center center !important;
+        background: url("http://adm.cna.com.br/arquivos/imagem/Banners/banner_mobile_camiseta_2.jpg")
+            no-repeat center center !important;
     }
 }
-
 
 body,
 html {
@@ -9702,8 +9704,6 @@ html {
     /*	body.iphone .lista-campanhas li {
             / *height: auto  !important; / * para suporte nativo era calc(33.3vh - 30px) * /
         }*/
-
-
 }
 
 .displayblock {
@@ -9714,21 +9714,77 @@ html {
     display: none !important;
 }
 
-.img-responsive{
+.img-responsive {
     width: 100%;
     max-width: 1000px;
 }
 
 p {
-    text-align: justify!important;
+    text-align: justify !important;
 }
 
-.chat{
-    z-index: 999; 
-    position: absolute; 
-    bottom: 10px; 
+.chat {
+    z-index: 999;
+    position: absolute;
+    bottom: 10px;
     left: 15px;
 }
+
+/* Você nas nuvens */
+@media only screen and (min-width: 790px) {
+    .nuvens {
+        background-image: url("images/bg-vc-nas-nuvens.png");
+        background-color: #fff0ce;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+    }
+
+    .nuvens-topo{
+        background-image: url("images/nuvens-topo.png");
+        background-color: #fff0ce;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .nunvens-imgs img {
+        max-width: 300px;
+    }
+    .btns-nuvens img {
+        max-width: 400px;
+    }
+}
+/* Você nas nuvens */
+@media only screen and (max-width: 790px) {
+    .nuvens {
+        background-image: url("images/bg-vc-nas-nuvens-2.png");
+        background-color: #fff0ce;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+    }
+
+    .nuvens-topo{
+        background-image: url("images/nuvens-topo-2.png");
+        background-color: #fff0ce;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+        width: 100%;
+        min-height: 550px;
+    }
+
+    .nunvens-imgs img {
+        max-width: 500px;
+    }
+    .btns-nuvens img {
+        max-width: 400px;
+    }
+}
+
 *, ul {
     padding: 0;
     margin: 0;

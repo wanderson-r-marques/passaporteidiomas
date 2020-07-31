@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 
 <head>
     <title>Passaporte idiomas</title>
@@ -17,23 +17,22 @@
 
     <!--Início dos arquivos CSS-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" />
-    <link rel="stylesheet" type="text/css" href="{{mix('assets/frontend/css/web.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/web.css')}}" />
     <!--End dos arquivos CSS-->
 
-    <!--Início dos arquivos Javascript-->    
+    <!--Início dos arquivos Javascript-->
     <script src="{{url('assets/frontend/bundles/scripts4050?v=f4uixSapoYwJNJCr1O1hNCS9laXjlFeEM51ZdFk3cXo1')}}"></script>
 
-    <script type="text/javascript" src="{{mix('assets/frontend/js/web.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/frontend/js/web.js')}}"></script>
     <!--End dos arquivos Js-->
 
     <meta property="og:image" content="{{url('assets/frontend/css/images/share_fb.png')}}" />
     <meta property="og:site_name" content="{{url('assets/frontend/css/images/share_fb.png')}}" />
-    <meta property="og:title" content="CNA - Cursos de ingl&#234;s e espanhol." />
+    <meta property="og:title" content="Passaporte idiomas - Cursos de inglês e espanhol." />
     <meta property="og:type" content="Type do Projeto" />
-    <meta property="og:url" content="www.cna.com.br/Home" />
-    <meta property="og:description" content="Venha aprender ingl&#234;s e espanhol no CNA, nosso m&#233;todo &#233; super divertido e eficaz. Mais do que melhores alunos melhores pessoas.
+    <meta property="og:url" content="www.passaporteidiomas.com.br" />
+    <meta property="og:description" content="Venha aprender inglês e espanhol na Passaporte idiomas, nosso método é super divertido e eficaz. Mais do que melhores alunos melhores pessoas.
 " />
-    <meta property="fb:admins" content="1314685555" />
 </head>
 
 <body>
@@ -123,6 +122,13 @@
                         <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}" />
                     </div>
                     <a class="mob-w menu-sobrecna" href="{{ route('web.who.we.are') }}">QUEM SOMOS</a>
+                </li>
+                <li>
+                    <!--ativo-bg-mobile-->
+                    <div class="icon s-cna">
+                        <img alt="" src="{{url('assets/frontend/css/images/sprite-menu.png')}}" />
+                    </div>
+                    <a class="mob-w menu-sobrecna" target="_blank" href="{{ route('web.cloud') }}">VOCÊ NAS NUVENS</a>
                 </li>
                 <li>
                     <!--ativo-bg-mobile-->

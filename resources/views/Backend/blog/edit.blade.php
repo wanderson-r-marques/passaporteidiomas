@@ -52,7 +52,14 @@
 @section('scripts')
 <script>
     function isSlider() {
-        const slider2 = document.querySelector('.slider2')        
+        const slider2 = document.querySelector('.slider2')    
+        const checkSlider2 = document.querySelector('.checkSlider2')
+
+        if (checkSlider2.checked) {
+            slider2.classList.remove('d-none')
+            inputSlider2.setAttribute('required', 'required')
+        }
+
         document.querySelector('input[name="is_slider"]').onclick = function() {
             const inputSlider2 = slider2.children[1].children[0]            
             if (this.checked){

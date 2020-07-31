@@ -20,7 +20,7 @@ class BlogController extends Controller
     {
 
         $blogs = Blog::paginate(10);
-        return view('backend.blog.index', [
+        return view('Backend.blog.index', [
             'blogs' => $blogs
         ]);
     }
@@ -32,7 +32,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('backend.blog.create');
+        return view('Backend.blog.create');
     }
 
     /**
@@ -83,7 +83,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('backend.blog.edit', compact('blog'));
+        return view('Backend.blog.edit', compact('blog'));
     }
 
     /**
