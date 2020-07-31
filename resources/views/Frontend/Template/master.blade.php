@@ -50,7 +50,9 @@
             <a id="menu_mobile" href="javascript:void(0);">
                 <img alt="" src="{{url('assets/frontend/css/images/menu-mobile.png')}}" />
             </a>
-            <p class="text-center"><img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}" /></p>
+            <a  class="text-center w-100" href="{{ route('web.home') }}">
+                <img alt="" src="{{url('assets/frontend/css/images/logo-3.png')}}" />
+            </a>
         </div>
         <nav class="principal" id="principal">
             <div class="logo">
@@ -154,28 +156,28 @@
             <div class="rbe">
                 <ul class="redes">
                     <li>
-                        <a class="instagram-fan-page" target="_blank" href="https://www.instagram.com/cnaoficial">
+                        <a class="instagram-fan-page" target="_blank" href="https://www.instagram.com/passaporteidiomas/">
                             <div class="icon ins">
                                 <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a class="facebook-fan-page" target="_blank" href="https://www.facebook.com/CNAoficial?fref=ts">
+                        <a class="facebook-fan-page" target="_blank" href="https://www.facebook.com/PassaporteIdiomas/">
                             <div class="icon fb">
                                 <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
                             </div>
                         </a>
                     </li>                    
                     <li>
-                        <a class="whatsapp-fan-page" target="_blank" href="https://www.linkedin.com/company/472767?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A472767%2Cidx%3A2-1-5%2CtarId%3A1441229978071%2Ctas%3Acna%20idiomas">
+                        <a class="whatsapp-fan-page" target="_blank" href="https://web.whatsapp.com/send?phone=5581992361922&text=">
                             <div class="icon in">
                                 <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a class="youtube-fan-page" target="_blank" href="https://www.youtube.com/channel/UC2ske3iLXp-nfs1-JZpOxJA">
+                        <a class="youtube-fan-page" target="_blank" href="hhttps://www.youtube.com/channel/UC2ske3iLXp-nfs1-JZpOxJA">
                             <div class="icon you">
                                 <img alt="" src="{{url('assets/frontend/css/images/sprite-redes.png')}}" />
                             </div>

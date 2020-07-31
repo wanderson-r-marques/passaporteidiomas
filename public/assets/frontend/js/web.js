@@ -210,8 +210,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/passaporteidiomas/resources/assets/frontend/js/passaporte.js */"./resources/assets/frontend/js/passaporte.js");
-module.exports = __webpack_require__(/*! /var/www/html/passaporteidiomas/resources/assets/frontend/js/EnumJS.js */"./resources/assets/frontend/js/EnumJS.js");
+__webpack_require__(/*! /var/www/passaporteidiomas/resources/assets/frontend/js/passaporte.js */"./resources/assets/frontend/js/passaporte.js");
+module.exports = __webpack_require__(/*! /var/www/passaporteidiomas/resources/assets/frontend/js/EnumJS.js */"./resources/assets/frontend/js/EnumJS.js");
 
 
 /***/ })
